@@ -16,7 +16,10 @@
 
 </p>
 
-# vue-gallery
+# gallery-vue
+
+This project originally based on project RobinCK (vue-gallery). Here added new features such Vimeo support, improved styling and etc.
+Soon all information and links on this page will be updated.
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/RobinCK/vue-gallery.svg)](https://greenkeeper.io/)
 :camera: VueJS responsive and customizable image and video gallery, carousel and lightbox, optimized for both mobile and desktop web browsers.
@@ -168,15 +171,7 @@ npm run build
 | onclose          |                         |         |
 | onclosed         |                         |         |
 
-
-## Other my Vue JS plugins
-
-| Project | Status | Description |
-|---------|--------|-------------|
-| [vue-ls](https://github.com/RobinCK/vue-ls)    | ![npm](https://img.shields.io/npm/v/vue-ls.svg)  | Vue plugin for work with local storage, session storage and memory storage from Vue context |
-| [vue-popper](https://github.com/RobinCK/vue-popper)      | ![npm](https://img.shields.io/npm/v/vue-popperjs.svg) | VueJS popover component based on <a href="https://popper.js.org/">popper.js</a> |
-
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FRobinCK%2Fvue-gallery.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FRobinCK%2Fvue-gallery?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fkedrovski%2Fgallery-vue.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fkedrovski%2Fgallery-vue?ref=badge_large)
 
-MIT © [Igor Ognichenko](https://github.com/RobinCK)
+MIT © [Ruslan Kedrovski](https://github.com/kedrovski)

@@ -1,10 +1,10 @@
 {
-  "name": "vue-gallery",
-  "version": "2.0.0",
-  "description": "VueJS responsive and customizable image and video gallery, carousel and lightbox, optimized for both mobile and desktop web browsers.",
-  "main": "dist/js/vue-gallery.js",
+  "name": "gallery-vue",
+  "version": "1.1.8",
+  "description": "VueJS responsive and customizable image and video gallery, carousel and lightbox, optimized for both mobile and desktop web browsers. Support Youtube and Vimeo.",
+  "main": "dist/js/gallery-vue.js",
   "jsnext:main": "src/index.js",
-  "unpkg": "dist/js/vue-gallery.min.js",
+  "unpkg": "dist/js/gallery-vue.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node_modules/.bin/eslint ./",
@@ -15,17 +15,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RobinCK/vue-gallery.git"
+    "url": "git+https://github.com/kedrovski/gallery-vue.git"
   },
-  "author": "Igor Ognichenko <ognichenko.igor@gmail.com>",
+  "author": "Ruslan Kedrovski <ruslan.kedrovski@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RobinCK/vue-gallery/issues"
+    "url": "https://github.com/kedrovski/gallery-vue/issues"
   },
-  "homepage": "https://github.com/RobinCK/vue-gallery#readme",
+  "homepage": "https://github.com/kedrovski/gallery-vue#readme",
   "keywords": [
     "vue-gallery",
+    "gallery-vue",
     "vuejs-gallery",
+    "gallery-vuejs",
+    "vue-youtube",
+    "vue-vimeo",
+    "vuejs-youtube",
+    "vuejs-vimeo",
     "vue",
     "vuejs",
     "gallery",
@@ -36,7 +42,9 @@
     "mobile",
     "touch",
     "vue-plugin",
-    "vue-component"
+    "vue-component",
+    "vue-slide",
+    "vue-carousel"
   ],
   "dependencies": {
     "blueimp-gallery": "^2.33.0"

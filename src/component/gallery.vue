@@ -26,11 +26,12 @@
   import 'blueimp-gallery/js/blueimp-gallery-fullscreen.js';
   import 'blueimp-gallery/js/blueimp-gallery-video.js';
   import 'blueimp-gallery/js/blueimp-gallery-youtube.js';
+  import 'blueimp-gallery/js/blueimp-gallery-vimeo.js';
   import blueimp from 'blueimp-gallery/js/blueimp-gallery.js';
 
   export default {
     props: {
-      images: {
+      input: {
         type: Array,
         default() {
           return [];
@@ -42,6 +43,11 @@
         default() {
           return {};
         },
+      },
+
+      clickToPlay: {
+        type: Boolean,
+        default: false,
       },
 
       carousel: {
@@ -91,7 +97,6 @@
 
     destroyed() {
       if (this.instance !== null) {
-        this.instance.destroyEventListeners();
         this.instance.close();
         this.instance = null;
       }
@@ -115,18 +120,20 @@
           onslidecomplete: (index, slide) => this.$emit('onslidecomplete', { index, slide }),
           onclose: () => this.$emit('close'),
           onclosed: () => this.$emit('onclosed'),
-        }, this.options);
+          youTubeClickToPlay: this.clickToPlay,
+          vimeoClickToPlay: this.clickToPlay,
+        });
 
         if (this.carousel) {
           options.container = this.$el;
         }
 
-        this.instance = instance(this.images, options);
+        this.instance = instance(this.input, options);
       },
       onSlideCustom(index, slide) {
         this.$emit('onslide', { index, slide });
 
-        const image = this.images[index];
+        const image = this.input[index];
         if (image !== undefined) {
           const text = image.description;
           const node = this.instance.container.find('.description');
@@ -150,5 +157,13 @@
   }
   .blueimp-gallery-controls > .description {
     display: block;
+  }
+  .blueimp-gallery a.close,
+  .blueimp-gallery a.next,
+  .blueimp-gallery a.prev {
+    color:white !important;
+   }
+  .blueimp-gallery-display {
+    display: none;
   }
 </style>
